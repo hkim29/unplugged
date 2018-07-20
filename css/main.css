@@ -112,7 +112,6 @@ a {
 
 p {
     font-size: 1em;
-    font-weight: 400;
     line-height: 1.4em;
 }
 
@@ -143,7 +142,7 @@ figure {
     border: none;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 2.5em;
+    line-height: 2.5;
     text-align: center;
     height: 2.5em;
     width: 100%;
@@ -151,15 +150,20 @@ figure {
     display: block;
 }
 
+.sidebar-newsletter input {
+    margin-bottom: 10px;
+}
+
 input.btn {
     background-color: #ff1256;
+    margin-bottom: 1.25em;
 }
 
 /* Header =======================*/
 .main-header {
     width: 100%;
     margin: auto;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .logo {
@@ -172,6 +176,7 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -192,13 +197,14 @@ main {
     width: 96%;
     padding : 0 2%;
     margin: auto;
-    clear: both;
+    clear:both;
 }
 
 /* Featured News Item =======================*/
 .top-story {
     width: 100%;
     border-bottom: 1px solid #ccc;
+    padding-top: 1.5em;
 }
 
 .top-img {
@@ -213,12 +219,13 @@ main {
 
 .sidebar-newsletter {
     border-bottom: 1px solid #ccc;
-    padding: 0 10px 20px 10px;
+    padding: 0;
 }
 
 .sidebar-newsletter input {
     width: 100%;
     box-sizing: border-box;
+    height: 2.5em;
 }
 
 .sidebar-newsletter input[type = "text"] {
@@ -228,21 +235,22 @@ main {
 
 .sidebar-about-us, .sidebar-faqs {
     display: none; 
+}
 
-/* Feed Section =======================*/
 
+/* Feed Section */
 
 .feed {
-   width: 100%;
+  width: 100%;
 }
 
 .feed p {
-    display: none; 
+    display: none;
 }
 
 .feed-item {
     clear: both;
-    border-bottom:  1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
 }
 
@@ -266,6 +274,10 @@ main {
     padding-right: 3%;
 }
 
+.last-item {
+    border-bottom: none;
+}
+
 /* About Page =======================*/
 
 .contact-info {
@@ -287,7 +299,6 @@ footer {
     width: 47.5%;
     margin: auto;
 }
-
 
 /* ==========================================================================
    Helper classes
@@ -369,140 +380,142 @@ footer {
     clear: both;
 }
 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
-    /* Tablet Styles here! */
-    
-    /* Header =======================*/
+@media only screen and (min-width:768px) {
+/* Tablet styles here */
 
-    .main-header {
-        width: 100%;
-        margin: auto;
-        padding: 0 3%;
-    }
+/* Header =========================== */
+  .main-header {
+    width: 100%;
+    margin: auto;
+    padding: 0 3%;
+  }
 
-    .main-header .header-wrapper {
-        width: 94%;
-        max-width: 960px;
-        margin: 0 auto;
-    }
+  .main-header .header-wrapper {
+    width: 94%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
 
-    .logo {
-        width: 40%;
-        float: left;
-    }
-    nav {
-        width: 60%;
-        float:left;
-    }
+  .logo {
+    width: 40%;
+    float: left;
+  }
 
-    /* Featured News Item =======================*/
+  nav {
+    width: 60%;
+    float: left;
+  }
 
-    .top-story {
-        width: 100%;
-    }
-    .top-img {
-        width: 57%;
-        float: left;
-        padding-right: 3%;
-    }
-    .top-info {
-        width: 40%;
-        float: left;
-    }
+  /* Featured News Item =========================== */
+  .top-story {
+    width: 100%;
+  }
 
-    /* Sidebar =======================*/
+  .top-img {
+    width: 57%;
+    float: left;
+    padding-right: 3%;
+  }
 
-    .sidebar {
-        clear: both;
-        width: 37%;
-        float: right;
-    }
-    .sidebar-about-us,
-    .sidebar-faqs {
-        display: block;
-    }
+  .top-info {
+    width: 40%;
+    float: left;
+  }
 
-    /* News Feed =======================*/
+  /* Side Bar =========================== */
+  .sidebar {
+    clear: both;
+    width: 37%;
+    float: right;
+  }
 
-    .feed {
-        width: 60%;
-        float: left;
-    }
+  .sidebar-about-us,
+  .sidebar-faqs {
+    display: block;
+  }
 
-    .feed-img{
-        width: 35%;
-    }
+  /* News Feed Section =========================== */
+  .feed {
+    width: 60%;
+    float: left;
+  }
 
-    .feed-info {
-        width: 57%;
-    }
+  .feed-img {
+    width: 35%;
+  }
 
+  .feed-info {
+    width: 57%;
+  }
 
-    /* About Us =======================*/
+  /* ABOUT PAGE ================================ */
+  .contact-info {
+    width: 40%;
+    float: left;
+  }
 
-    .contact-info {
-        width: 40%;
-        float: left;
-    }
+  /* Footer =========================== */
+  .footer-logo {
+    width: 30%;
+    margin: auto;
+  }
 
-    /* Footer =======================*/
-
-    .footer-logo {
-        width: 30%;
-        margin: auto;
-    }
 }
 
-@media only screen and (min-width: 940px){
-    /* Desktop Styles here! */
+@media only screen and (min-width:940px) {
+  /* Desktop styles here */
 
-    /* Featured News Item =======================*/
+  /* Featured News Item =========================== */
+  .top-story {
+    width: 65%;
+    float: left;
+  }
 
-    .top-story {
-        width: 65%;
-        float: left;
-    }
+  .top-img {
+    width: 100%;
+  }
 
-    .top-img {
-        width:100%;
-    }
+  .top-info {
+    width: 100%;
+    float: left;
+  }
 
-    /* Sidebar =======================*/
+  /* Side Bar =========================== */
+  .sidebar {
+    clear: none;
+    width: 30%;
+    float: right;
+  }
 
-    .sidebar {
-        clear: none;
-        width: 35%;
-        float: right;
-    }
+  /* News/Reviews Feed Section =========================== */
+  .feed {
+    width: 100%;
+    float: none;
+    clear: both;
+  }
 
-    /* News Feed =======================*/
+  .feed p {
+    display: block;
+    margin-top: 0;
+  }
 
-    .feed {
-        width: 100%;
-        float: none;
-        clear: both;
-    }
+  .feed-img {
+    width: 20%;
+  }
 
-    .feed p {
-        display: block;
-        margin-top: 0;
-    }
+  /* Footer =========================== */
 
-    .feed-img {
-        width: 20%;
-    }
+  .footer-logo {
+    width: 20%;
+  }
 
-    /* Footer =======================*/
-
-    .footer-logo {
-        width: 20%;
-    }
 }
 
 @media print,
@@ -519,71 +532,72 @@ footer {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  *,   
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster */
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+      text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre {
+      white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
 
-    thead {
-        display: table-header-group;
-    }
+  thead {
+      display: table-header-group;
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+      page-break-inside: avoid;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
 }
+
