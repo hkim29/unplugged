@@ -237,7 +237,7 @@ main {
 }
 
 .feed p {
-    display: none !important;
+    display: none; 
 }
 
 .feed-item {
