@@ -285,6 +285,36 @@ main {
     padding-top: 30px
 }
 
+.team-member {
+  width: 100%;
+}
+
+#jared {
+  background: url('../img/team-jared.png') center no-repeat;
+  background-size: cover;
+}
+
+#soo {
+  background: url('../img/team-soo.png') center no-repeat;
+  background-size: cover;
+}
+
+#jenny {
+  background: url('../img/team-jenny.png') center no-repeat;
+  background-size: cover;
+}
+
+.team-img {
+  width:30%;
+  padding-bottom: 30%;
+  float: left;
+  margin-right: 2em;
+}
+
+.team-info {
+  width: 35%;
+}
+
 /* Footer =======================*/
 footer {
     width: 100%;
